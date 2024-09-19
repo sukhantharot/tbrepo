@@ -1,7 +1,6 @@
 'use client';
 
 import * as React from 'react';
-import RouterLink from 'next/link';
 import { usePathname } from 'next/navigation';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -12,7 +11,6 @@ import { ArrowSquareUpRight as ArrowSquareUpRightIcon } from '@phosphor-icons/re
 import { CaretUpDown as CaretUpDownIcon } from '@phosphor-icons/react/dist/ssr/CaretUpDown';
 
 import type { NavItemConfig } from '@/types/nav';
-import { paths } from '@/paths';
 import { isNavItemActive } from '@/lib/is-nav-item-active';
 import { Logo } from '@/components/core/logo';
 
@@ -51,7 +49,7 @@ export function SideNav(): React.JSX.Element {
       }}
     >
       <Stack spacing={2} sx={{ p: 3 }}>
-        <Box component={RouterLink} href={paths.home} sx={{ display: 'inline-flex' }}>
+        <Box>
           <Logo color="light" height={32} width={122} />
         </Box>
         <Box
@@ -141,14 +139,6 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title }: N
   return (
     <li>
       <Box
-        {...(href
-          ? {
-              component: external ? 'a' : RouterLink,
-              href,
-              target: external ? '_blank' : undefined,
-              rel: external ? 'noreferrer' : undefined,
-            }
-          : { role: 'button' })}
         sx={{
           alignItems: 'center',
           borderRadius: 1,
