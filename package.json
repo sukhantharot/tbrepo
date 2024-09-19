@@ -48,8 +48,6 @@
   "devDependencies": {
     "turbo": "^2.1.2",
     "@antfu/eslint-config": "^2.27.3",
-    "@commitlint/cli": "^19.4.1",
-    "@commitlint/cz-commitlint": "^19.4.0",
     "@eslint-react/eslint-plugin": "^1.14.0",
     "@next/bundle-analyzer": "^14.2.9",
     "@next/eslint-plugin-next": "^14.2.9",
@@ -60,8 +58,6 @@
     "@semantic-release/git": "^10.0.1",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
-    "@commitlint/config-conventional": "^19.5.0",
-    "@commitlint/types": "^19.5.0",
     "@types/node": "^22.5.4",
     "@types/pg": "^8.11.8",
     "@types/react": "^18.3.5",
