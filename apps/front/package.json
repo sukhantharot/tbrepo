@@ -1,0 +1,38 @@
+{
+  "name": "front",
+  "version": "4.0.0",
+  "author": "Devias",
+  "licence": "MIT",
+  "homepage": "https://devias.io",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "typecheck": "tsc --noEmit",
+    "format:write": "prettier --write \"**/*.{js,jsx,mjs,ts,tsx,mdx}\" --cache",
+    "format:check": "prettier --check \"**/*.{js,jsx,mjs,ts,tsx,mdx}\" --cache"
+  },
+  "dependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/ui": "workspace:*"
+  },
+  "peerDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/ui": "workspace:*"
+  },
+  "optionalDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/ui": "workspace:*"
+  }
+}
